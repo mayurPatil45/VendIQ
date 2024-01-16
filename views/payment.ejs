@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>payment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <span class="login100-form-title p-b-26">
+                    SCAN & PAY: Rs. <%= amount %>
+                </span>
+                <div class="wrap-input100 validate-input">
+                    <img width="300px" src=<%=Qr %>>
+                </div>
+                <form action="/" method="get" name="back">
+                    <button type="submit" class="goback">BACK</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            window.setTimeout(function () { document.back.submit(); }, 5000 * 2);
+        };
+    </script>
+</body>
+
+</html>

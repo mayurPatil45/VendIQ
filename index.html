@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VendIQ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='stylesheet' href="/public/stylesheets/style.css">
+</head>
+
+<body>
+    <form action="/views/payment" method="post" id="pay">
+        <div class="container" st>
+            <h1 style="text-align: center; color: black">MENU</h1>
+        </div>
+        <div class="card-columns">
+            <div class="card bg-primary" id="coke">
+                <div class="card-body text-center">
+                    <h5 class="card-title">COKE</h5>
+                    <p class="card-text">MRP-50</p>
+                    <button type="button" class="btn btn-secondary" id="bt1">-</button>
+                    <input type="text" name="textbox1" id="textbox1" placeholder=" 0" style="width: 2rem;" />
+                    <button type="button" class="btn btn-secondary" id="bt2">+</button>
+                </div>
+            </div>
+            <div class="card bg-warning" id="lemonade">
+                <div class="card-body text-center">
+                    <h5 class="card-title">LEMONADE</h5>
+                    <p class="card-text">MRP-50</p>
+                    <div class="item">
+                        <button type="button" class="btn btn-secondary" id="bt1">-</button>
+                        <input type="text" name="textbox2" id="textbox2" placeholder=" 0" style="width: 2rem;" />
+                        <button type="button" class="btn btn-secondary" id="bt4">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-success" id="dew">
+                <div class="card-body text-center">
+                    <h5 class="card-title">MOUNTAIN DEW</h5>
+                    <p class="card-text">MRP-50</p>
+                    <div class="item">
+                        <button type="button" class="btn btn-secondary" id="bt1">-</button>
+                        <input type="text" name="textbox3" id="textbox3" placeholder=" 0" style="width: 2rem;" />
+                        <button type="button" class="btn btn-secondary" id="bt2">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-danger" id="juice">
+                <div class="card-body text-center">
+                    <h5 class="card-title">JUICE</h5>
+                    <p class="card-text">MRP-50</p>
+                    <button type="button" class="btn btn-secondary" id="bt1">-</button>
+                    <input type="text" name="textbox4" id="textbox4" placeholder=" 0" style="width: 2rem;" />
+                    <button type="button" class="btn btn-secondary" id="bt2">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="payment_details text-center mt-3">
+            <input type="text" class="form-control mr-sm-2 d-inline-block" name="textbox5" id="textbox5"
+                placeholder="TOTAL AMOUNT" style="width: 10rem;" />
+            <button class="btn btn-outline-success my-2 my-sm-0 ml-2" id="bt3" type="submit">PROCEED</button>
+        </div>
+    </form>
+
+    <script type="text/javascript" src="/public/javascripts/n.js"></script>
+</body>
+
+</html>
